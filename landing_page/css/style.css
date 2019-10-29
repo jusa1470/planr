@@ -4,6 +4,10 @@ grey: #808080
 blue: #58ABF9
 */
 
+html{
+	height:100%;
+}
+
 body{
 	font-size: 15px;
 	line-height: 1.5;
@@ -14,7 +18,7 @@ body{
 
 h1{
 	font-family: 'Crimson Text', serif;
-	font-size: 5em;
+	font-size: 4em;
 }
 
 h2 {
@@ -54,6 +58,10 @@ ul{
 	margin-top: 60px;
 }
 
+#demoExternal{
+	display: none;
+}
+
 
 
 /* Header */
@@ -61,6 +69,7 @@ header{
 	/*background: #808080;*/
 	background: #39b8ea;
 	color: white;
+	width: 100%;
 }
 
 header a{
@@ -94,6 +103,7 @@ header a:hover{
 	color: #cccccc;
 }
 
+
 /* Showcase */
 #showcase{
 	min-height: 420px;
@@ -105,7 +115,6 @@ header a:hover{
 
 #showcase h1{
 	margin-top: 100px;
-	font-size: 55px;
 	margin-bottom: 10px;
 	margin-left: 500px;
 }
@@ -148,6 +157,10 @@ header a:hover{
 	text-align: right;
 }
 
+#imageRightMedia{
+	display: none;
+}
+
 .row{
 	padding-bottom: 400px; 
 }
@@ -159,12 +172,13 @@ header a:hover{
 	padding-bottom: 40px;
 }
 
+#about-header{
+	text-align: center;
+}
+
 
 #demo{
 	text-align: center;
-	border-bottom: 5px solid;
-	border-bottom-color: #4CA64C;
-	border-width: 50%;
 	padding-bottom: 40px;
 }
 
@@ -185,6 +199,144 @@ footer{
 }
 
 
+
+
+@media only screen and (max-width: 1050px) {
+
+	header img{
+		height: 40px;
+
+	}
+
+	h1{
+		font-size:2.5em;
+	}
+
+	h2{
+		font-size:2em;
+	}
+
+	p{
+		font-size:1em;
+	}
+
+	#showcase h1{
+	margin-top: 120px;
+	margin-bottom: 10px;
+	margin-left: 300px;
+	}
+
+	.description{
+		margin-top: 80px;
+	}
+
+	#boxes img{
+		width: 70%;
+	}
+
+}
+
+@media only screen and (max-width : 768px) {
+
+	h2{
+		font-size:1.5em;
+	}
+
+	p{
+		font-size:1em;
+	}
+
+	.description{
+		margin-top: 70px;
+		margin-bottom: 0px;
+	}
+
+	#boxes{
+		padding-bottom: 0px;
+	}
+
+	#boxes img{
+		width: 70%;
+	}
+
+}
+
+@media only screen and (max-width: 675px) {
+
+	h1{
+		font-size:2em;
+	}
+
+	h2{
+		font-size:1.5em;
+	}
+
+	p{
+		font-size:1em;
+	}
+
+
+	header nav{
+		float: left;
+		margin-top: 0px;
+		margin-left:-10px;
+		display: none;
+
+	}
+
+	header img{
+		height: 30px;
+
+	}
+
+	#showcase{
+		display:none;
+	}
+
+	.right{
+		width:100%;
+		float:left;
+	}
+
+
+	.left{
+		width:100%;
+		float:left;
+	}
+
+	.description{
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+
+	#imageRight{
+		display: none;
+	}
+	#imageRightMedia{
+		display: inline;
+		margin-bottom: 0px;
+	}
+	#demoEmbed{
+		display: none;
+	}
+	#demoExternal{
+		display: inline;
+	}
+	#boxes{
+		padding: 0px;
+	}
+
+	#boxes img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+	}
+	#boxes h2{
+		text-align: center;
+	}
+
+}
 
 
 
