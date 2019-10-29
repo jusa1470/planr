@@ -171,24 +171,8 @@ header a:hover{
 
 
 /* Newsletter */
-#newsletter h1{
-	float: left;
-}
-
-#newsletter form{
-	float: right;
-	margin-top: 20px;
-	font-size: 1.5em;
-
-}
-
-
-#newsletter input{
-	padding: 4px;
-	height: 25px;
-	width: 250px;
-	border-radius: 4px;
-	border: none;
+#newsletter{
+	text-align: center;
 }
 
 
