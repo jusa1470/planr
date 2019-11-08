@@ -72,6 +72,13 @@ header{
 	width: 100%;
 }
 
+.navbar{
+	background: #39b8ea;
+	color: white;
+	width: 100%;
+	overflow: hidden;
+}
+
 header a{
 	color: white;
 	text-decoration: none;
@@ -86,7 +93,7 @@ header li{
 
 header #branding{
 	float: left;
-	margin: 20px 0px 20px 0px;
+	margin: 15px 0px 15px 0px;
 }
 
 header nav{
@@ -123,10 +130,11 @@ header a:hover{
 	font-size: 20px;
 }
 
-#newsletter{
+#help{
 	padding: 15px;
 	color: white;
 	background: #808080;
+	text-align: center;
 }
 
 /* Boxes */
@@ -183,12 +191,6 @@ header a:hover{
 }
 
 
-
-/* Newsletter */
-#newsletter{
-	text-align: center;
-}
-
 #helpCTA{
 	font-size: 22px;
 	text-decoration: none;
@@ -199,6 +201,20 @@ header a:hover{
 	border-bottom: 1px solid #4CA64C;
 	border-left: 1px solid #4CA64C;
 	border-radius: 8px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #39b8ea;
+
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 

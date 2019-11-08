@@ -12,17 +12,19 @@
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<div id="branding">
-					<img src="./images/logoWhite.png">
+			<div id="navbar">
+				<div class= "container">
+					<div id="branding">
+						<img src="./images/logoWhite.png">
+					</div>
+					<nav>
+						<ul id="navigation">
+							<li class="mainNav"><a href="#boxes">Features</a></li>
+							<li class="mainNav"><a href="#about">About</a></li>
+							<li><a id="helpCTA" href="#help"><strong>Help Us Out!</strong></a></li>
+						</ul>
+					</nav>
 				</div>
-				<nav>
-					<ul id="navigattion">
-						<li class="mainNav"><a href="#boxes">Features</a></li>
-						<li class="mainNav"><a href="#about">About</a></li>
-						<li><a id="helpCTA" href="#help"><strong>Help Us Out!</strong></a></li>
-					</ul>
-				</nav>
 			</div>
 		</header>
 		<section id="showcase">
@@ -93,12 +95,26 @@
 		<section id="help">
 			<div class="container">
 				<h2>Help Us Out!</h2>
-				<p>We are trying to assess intrest in the  product and would love feedback. Please take the survey below to help us out!</p>
+				<p>We are trying to assess interest in our product and would love to hear your thoughts. Please take the survey below to help us out!</p>
 				<iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSc-25PwtxtC1KlL_QBCIPuwV88Q3o6auMklBibVDgBUycOVaA/viewform?embedded=true" width="640" height="2252" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 			</div>
 		</section>
 		<footer>
 			<p>PLANR, Copyright &copy; 2019</p>
 		</footer>
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+			  if (window.pageYOffset > sticky) {
+			    navbar.classList.add("sticky")
+			  } else {
+			    navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
 	</body>
 </html>
