@@ -189,6 +189,18 @@ header a:hover{
 	text-align: center;
 }
 
+#helpCTA{
+	font-size: 22px;
+	text-decoration: none;
+	background-color: #4CA64C;
+	padding: 15px 15px 15px 15px;
+	border-top: 1px solid #4CA64C;
+	border-right: 1px solid #4CA64C;
+	border-bottom: 1px solid #4CA64C;
+	border-left: 1px solid #4CA64C;
+	border-radius: 8px;
+}
+
 
 /* Footer */
 footer{
@@ -276,11 +288,18 @@ footer{
 	}
 
 
-	header nav{
+	.mainNav{
 		float: left;
 		margin-top: 0px;
 		margin-left:-10px;
 		display: none;
+
+	}
+
+	#helpCTA{
+		display: inline;
+		font-size: 12px;
+		padding: 10px 8px 10px 8px;
 
 	}
 
@@ -342,10 +361,14 @@ footer{
 }
 
 
+@media only screen and (max-width: 336px) {
+	#helpCTA{
+		display: none;
+	}
 
 
 
-
+}
 
 
 
